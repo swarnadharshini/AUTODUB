@@ -1,5 +1,5 @@
 # AUTODUB
-Setup
+# Setup
 Create a new Google Cloud Project.
 
 Enable these Google Cloud APIs:
@@ -32,6 +32,7 @@ You should be good to go.
 
  python dubber.py my_movie_file.mp4 "en" outputDirectory --targetLangs '["ja", "es"]'
  
+ #args
  dubber.py supports the following command line args:
 
 Args:
