@@ -15,22 +15,23 @@ Create a new service account with the Translation Admin permission and download 
      export "GOOGLE_APPLICATION_CREDENTIALS" = "./path_to_key.json"
 Create a new Google Cloud Storage bucket. We'll need this to store data temporarily while interacting with the Speech API:
 
- gsutil mkdir MY_BUCKET_NAME
+     gsutil mkdir MY_BUCKET_NAME
 Make a copy of the file .env_template:
 
- cp .env_template .env
+      cp .env_template .env
 And edit .env, filling in your own values for project id and bucket.
 
 Create a virtualenv:
 
- python3 -m venv venv
- source ./venv/bin/activate
+      python3 -m venv venv
+      source ./venv/bin/activate
 Install the python dependencies:
 
- pip install -r requirements.txt
+       pip install -r requirements.txt
+ 
 You should be good to go.
 
- python dubber.py my_movie_file.mp4 "en" outputDirectory --targetLangs '["ja", "es"]'
+      python dubber.py my_movie_file.mp4 "en" outputDirectory --targetLangs '["ja", "es"]'
  
  # Args
  dubber.py supports the following command line args:
